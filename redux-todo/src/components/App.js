@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import TodoList from '../components/TodoList'
 import {fetchTodos}from '../actions/'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
@@ -18,8 +17,7 @@ class App extends Component {
 	render () {
 		return (
 			<div>
-				<AddTodo/>
-				<VisibleTodoList/>
+				<TodoList/>
 			</div>
 		)
 	}
