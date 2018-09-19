@@ -8,7 +8,10 @@ const todos = (state = [], action) => {
 					text: action.text,
 					completed: false
 				}
-			]
+			];
+
+		case 'RECEIVE_TODO':
+			return [...action.items];
 
 		case 'TOGGLE_TODO':
 			return state.map(todo => (todo.id === action.id) ? {...todo, completed: ! todo.completed} : todo);
