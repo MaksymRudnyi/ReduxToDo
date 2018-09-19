@@ -22,7 +22,7 @@ const receiveTodos = (todos) => {
 		items: todos.results.map(todo => {
 			return {
 				text: todo.name,
-				id: todo['birth_year'] + todo.name
+				id: todo['birth_year'] + todo.name,
 			}
 		})
 	}
