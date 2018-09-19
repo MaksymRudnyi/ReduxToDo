@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
-import {fetchTodos}from '../actions/'
+import {fetchTodos} from '../actions/'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 
@@ -11,7 +11,7 @@ class App extends Component {
 		super(props)
 	}
 
-	componentDidMount() {
+	componentDidMount () {
 		const {dispatch} = this.props;
 		dispatch(fetchTodos())
 	}
